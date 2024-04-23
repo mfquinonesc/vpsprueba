@@ -1,0 +1,39 @@
+<div style="margin-bottom: 2rem;">
+    <p>
+        <a routerLink="/">Home</a>
+    </p>        
+    <p>
+        <a routerLink="/matriz">Matriz</a>
+    </p>    
+</div>
+<div class="field">
+    <label class="label">Arreglo A</label>
+    <div class="control">
+        <textarea class="textarea" placeholder="Textarea" [(ngModel)]="arreglo1"></textarea>
+    </div>
+</div>
+
+<div class="field">
+    <label class="label">Arreglo B</label>
+    <div class="control">
+        <textarea class="textarea" placeholder="Textarea" [(ngModel)]="arreglo2"></textarea>
+    </div>
+</div>
+
+<div class="field ">
+    <div class="control">
+        <button type="button" class="button is-link" (click)="sumar()">SUMAR</button>
+    </div>
+</div>
+
+<div class="field">
+    <label class="label">Arreglo C</label>
+    <div class="control">
+        <textarea class="textarea" placeholder="Textarea" [(ngModel)]="result"></textarea>
+    </div>
+</div>
+<div class="field ">
+    <div class="control">
+        <button type="button" class="button is-link" (click)="limpiar()">LIMPIAR</button>
+    </div>
+</div>

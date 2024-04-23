@@ -1,0 +1,44 @@
+<div style="margin-bottom: 2rem;">
+    <p>
+        <a routerLink="/arr">Arreglos</a>
+    </p>        
+    <p>
+        <a routerLink="/">Home</a>
+    </p>    
+</div>
+<div class="field ">
+    <div class="control">
+        <label for="">N dimensión</label>
+    </div>
+    <div class="control">
+        <div class="select">
+            <input type="number" name="" id="" [(ngModel)]="dimension">
+        </div>
+    </div>
+</div>
+
+<div class="field">
+    <label class="label">Matriz</label>
+    <div class="control">
+        <textarea class="textarea" placeholder="Textarea" [(ngModel)]="inputMatriz"></textarea>
+    </div>
+</div>
+
+<div class="field ">
+    <div class="control">
+        <button type="button" class="button is-link" (click)="calculate()">Calcular</button>
+    </div>
+</div>
+
+<div class="field">
+    <label class="label">Resultado</label>
+    <div class="control">
+        <p>{{result}}</p>
+    </div>
+</div>
+
+<div class="field ">
+    <div class="control">
+        <button type="button" class="button is-link" (click)="clear()">Limpiar</button>
+    </div>
+</div>
